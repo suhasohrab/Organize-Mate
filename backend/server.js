@@ -14,8 +14,4 @@ db.on("open",()=>console.log("DATABASE CONNECTED"));
 const tasRouter = require("./routes/tasks");
 app.use("/api/tasks",tasRouter)
 
-
-
-
-
 app.listen(process.env.PORT,()=>console.log(`server is listening at port ${process.env.PORT}`));
